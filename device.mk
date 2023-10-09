@@ -111,5 +111,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     $(LOCAL_PATH)/configs/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light@2.0-service.realme_RMX3061
+
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@1.0-impl \
+    android.hardware.thermal@1.0-service \
+    thermal.RMX3061
+
 # Inherit vendor
 $(call inherit-product, vendor/realme/RMX3061/RMX3061-vendor.mk)
