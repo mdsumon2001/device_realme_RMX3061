@@ -10,7 +10,7 @@ $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # rr stuffs
 TARGET_FACE_UNLOCK_SUPPORTED := true
-RR_BUILDTYPE := unofficial
+RR_BUILDTYPE := Oppenheimer
 BUILD_RR_WALLPAPERS := true
 TARGET_BOOT_ANIMATION_RES := 720
 
